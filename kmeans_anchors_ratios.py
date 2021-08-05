@@ -156,7 +156,7 @@ def average_iou(boxes, anchors):
     """
     return np.mean(np.max(iou(boxes, anchors), axis=1))
 
-
+#This function can be reused
 def kmeans(boxes, num_clusters=3, max_iter=300, seed=None, centroid_calc_fn=np.median):
     """Calculates K-Means clustering using the Intersection over Union (IoU) metric.
 
